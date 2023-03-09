@@ -1,7 +1,7 @@
 import { Btn } from "./Button.styled";
 
-export const Button = ({ text, handleClicks }) => {
+export const Button = ({ text, name, handleClicks }) => {
     return <>
-        <Btn onClick={handleClicks}>{text}</Btn>
+        <Btn onClick={handleClicks} data-name={name}>{text}</Btn>
     </>
 }

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-export const Title = ({ text }) => {
+export const Title = ({ title }) => {
     return <>
-        <h1 className='title'>{text}</h1>
+        <h1 className='title'>{title}</h1>
     </>
 }
 
 Title.propTypes = {
-    text: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
 }
