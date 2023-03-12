@@ -1,6 +1,6 @@
 import { Container, StatisticsList, ListItem } from "components/Statistics/Statistics.styled";
 import { Component } from "react";
-
+import PropTypes from 'prop-types';
 
 export class Statistics extends Component {
     render() {
@@ -15,4 +15,12 @@ export class Statistics extends Component {
         </StatisticsList>
     </Container> 
    }
+}
+
+Statistics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired,
 }
