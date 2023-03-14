@@ -9,9 +9,10 @@ export const Btn = styled.button`
     border-radius: 4px;
     margin-right: 10px;
     padding: 6px 25px;
-    min-width: 73px;
+    min-width: 80px;
     font-family: inherit;
     text-align: center;
+    text-transform: capitalize;
     background-color: #3EB489;
     color: white;
     cursor: pointer;
